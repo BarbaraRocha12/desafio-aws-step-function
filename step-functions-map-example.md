@@ -58,7 +58,7 @@ O estado Map itera sobre cada item da lista `itens`.
 Para cada item, ele executa o estado `ProcessarItem`, que chama uma função Lambda para processar o item.
 
 -----
-### [Veja o Diagrama](https://www.google.com/search?q=imagens/MapaAwsStepFunctions.png)
+### [Veja o Diagrama](imagens/MapaAwsStepFunctions.png)
 ### Explicação do Diagrama
 
 
