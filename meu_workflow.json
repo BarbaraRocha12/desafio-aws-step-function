@@ -1,0 +1,39 @@
+Mapa no AWS Step Functions para processar uma lista de itens.
+
+{
+  "Comment": "Exemplo de uso do estado Map no Step Functions",
+  "StartAt": "ProcessarItens",
+  "States": {
+    "ProcessarItens": {
+      "Type": "Map",
+      "InputPath": "$.itens",
+      "ItemProcessor": {
+        "ProcessorConfig": {
+          "Mode": "INLINE"
+        },
+        "StartAt": "ProcessarItem",
+        "States": {
+          "ProcessarItem": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:REGIAO:ID_DA_CONTA:function:NomeDaFuncao",
+            "End": true
+          }
+        }
+      },
+      "MaxConcurrency": 2,
+      "End": true
+    }
+  }
+}
+
+Exemplo de Entrada:
+
+{
+  "itens": [
+    { "id": 1, "nome": "Item A" },
+    { "id": 2, "nome": "Item B" },
+    { "id": 3, "nome": "Item C" }
+  ]
+}
+
+
