@@ -59,7 +59,7 @@ Para cada item, ele executa o estado `ProcessarItem`, que chama uma função Lam
 
 -----
 ## Exemplo de Diagrama
-![Texto alternativo aqui](caminho/para/sua/imagem.png)
+![Texto alternativo aqui](imagens/stepFunctions.png)
 
 ### Explicação do Diagrama
 
