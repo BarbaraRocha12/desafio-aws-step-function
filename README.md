@@ -66,3 +66,9 @@ Temos os seguintes estados:
 * **`Pass` (Passagem):** É um estado utilitário, muitas vezes usado para depuração ou para manipular os dados. Ele simplesmente passa da entrada para a saída, não fazendo nenhum trabalho. Seus casos de uso mais comuns são adicionar dados fixos ao JSON, filtrar ou transformar o JSON de estado (usando InputPath, ResultPath, OutputPath) e atuar como um "placeholder" durante o desenvolvimento.
 
 **Com esses estados podemos praticamente construir qualquer lógica dentro de um workflow.**
+
+
+
+## 📚 Referências
+
+* **Documentação:** [Documentação oficial da AWS Step Functions](https://aws.amazon.com/pt/step-functions/) - Usado como fonte de pesquisa principal.
