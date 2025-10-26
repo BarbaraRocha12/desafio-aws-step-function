@@ -1,4 +1,4 @@
-# Desafio-Aws-Step-Function
+# Desafio-Aws-Step-Functions
 
 ---
 
